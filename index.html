@@ -250,6 +250,7 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     justify-content: center;
     
     display: none;
+    flex-direction: column;
     transition:display 10s linear 10s;
     
     
@@ -324,16 +325,17 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
                 
                 ></textarea>
             </div>
-            <button
+            
+
+        </form>
+        <button
             style="background-color: rgb(117, 117, 212);
             border-radius: 3px;
             outline: none;
             border: none;
             font-family: 'Montserrat', sans-serif;
             " 
-             onclick="submit();">Submit</button>
-
-        </form>
+             onclick="submit(event);">Submit</button>
 
     </div>
 </body>
@@ -350,13 +352,17 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     function hide(){
         document.getElementById("complaintform").style.display="none"
     }
-    function submit(){
+    function submit(event){
+        
+        event.preventDefault();
         let uname=document.getElementById("username").value;
         let email=document.getElementById("email").value;
         let issue=document.getElementById("complaints").value;
+        if(window.Complaints){
         Complaints.savecomplaints(uname,email,issue)
+        }
         console.log(uname)
-        event.preventDefault();
+        
 
     }
     
