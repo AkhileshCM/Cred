@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credential Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body
+
+
+style="height: 100vh;
+overflow-x: hidden;
+margin: 0px;
+background-color: white;
+padding: 0px;
+box-sizing: border-box;
+width: 100vw;"
+>
+
+    <div
+    style="display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    "
+    >
+    <h1 style="
+    margin: 0px;
+    padding: 0px;
+    display: inline; color: orangered;">Dmovies</h1>
+    <h2 style="
+    margin: 0px;
+    padding: 0px;
+    color: rgb(87, 76, 76);">Help</h2>
+
+    </div>
+    <div
+    style="
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    "
+    >
+        <input type="text"
+        placeholder="Enter your search term....."
+        style="
+        outline: none;
+        padding: 0px 0px 0px 10px;
+        min-width: 300px;
+        max-width: 600px;
+        margin: 0px;
+        border: none;
+        height: 27px;
+
+        "
+        >
+        <button 
+        style="width: 50px;
+        margin: 0px;
+        border: 1px solid white;
+        padding: 0px;
+        height: 27px;
+        "
+        >
+            <img width="50px" height="25px" alt="search-logo" src="https://t3.ftcdn.net/jpg/04/99/34/78/360_F_499347841_IXq0bLOPN4MkKAa71nP3WMQq6LVlgeTO.jpg"/>
+        </button>
+    </div>
+
+    <div
+    style="
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    "
+    
+    >
+        <div
+    style="display: flex;
+    flex-wrap: wrap;
+    width:calc(100%-500px);
+    height: fit-content;
+    gap: 5px;
+    "
+    >
+    <!-- card1 -->
+    <div
+    style="
+    height: 150px;
+    padding: 5px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid green;
+    color: green;
+    width: 350px;"
+    >
+    <div
+    
+    >
+        <img style="width:40px; height: 40px;" alt="Accountlogo" src="https://www.iconsdb.com/icons/preview/green/user-xxl.png"
+        />
+    </div>
+    <div>
+        <h2
+        style="margin: 5px 0px 5px 0px;
+        padding: 0px;"
+        >Accounts</h2>
+    <p
+    style="margin: 0px 0px 10px 0px;
+    padding: 0px;"
+    >
+        Update your account information and manage your subscriptions
+    </p>
+
+    </div>
+
+    </div>
+    <!-- card2 -->
+    <div
+    style="height: 150px;
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid violet;
+    color: violet;
+    width: 350px;"
+    >
+    <div
+    
+    >
+        <img style="width:40px; height: 40px;" alt="Accountlogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VXgYRb1Mq17peH-fSTDFmN_cnUQRHeNi4tv1M1HtZg&s"
+        />
+    </div>
+    <div
+    
+    >
+        <h2
+        style="margin: 5px 0px 5px 0px;
+        padding: 0px;"
+        >Purchases</h2>
+    <p
+    style="margin: 0px 0px 10px 0px;
+    padding: 0px;"
+    >
+        Resolve issues with promo codes,gift cards, or buying books.
+    </p>
+
+    </div>
+
+    </div>
+
+    <!-- card3 -->
+    <div
+    style="height: 150px;
+    padding: 5px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid blue;
+    color: blue;
+    width: 350px;"
+    >
+    <div
+    
+    >
+        <img style="width:70px; height: 70px;" alt="Accountlogo" src="https://img.freepik.com/free-vector/customer-service-guide-abstract-concept_335657-3033.jpg?size=626&ext=jpg"
+        />
+    </div>
+    <div>
+        <h2
+        style="margin: 5px 0px 5px 0px;
+        padding: 0px;"
+        >User Guides</h2>
+    <p
+    style="margin: 0px 0px 10px 0px;
+    padding: 0px;"
+    >
+        Find complete instructions of Dmovies 
+    </p>
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+    </div>
+    <div
+    onclick="callcomplaintform()"
+    id="fillcomplaint"
+    style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: fit-content;
+    height: fit-content;
+    
+    "
+    >
+    
+
+        <img
+        height="50px"
+        width="50px"
+         src="data:image/png;base64,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"/>
+         <h3
+         style="margin: 0px;
+         "
+         >Complaints</h3>
+        </div>
+    <div 
+    id="complaintform"
+    style="font-family: 'Montserrat', sans-serif;
+    color: black;
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    top: 30%;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    align-items: center;
+    width: 300px;
+    
+    padding: 50px;
+    justify-content: center;
+    
+    display: none;
+    transition:display 10s linear 10s;
+    
+    
+    "
+    
+    >
+        <form
+        
+        >
+        <div
+        onclick="hide()"
+        style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        "
+        >
+            <img
+            height="25px"
+            width="25px"
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQFzafBZkmoEydBadLpQ1IM5muRx60qIB-w&usqp=CAU"/>
+
+        </div>
+            <legend><h2>Fill Your Complaint</h2></legend>
+            <div
+            style="margin: 0px;
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    ">
+                <label><h4
+                    style="margin: 0px;
+                    padding: 0px;
+                    "
+                    >Username</h4></label>
+                <input id="username" type="text"
+                style="outline: none;
+                border: none;"
+                 />
+            </div>
+            <div style="margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            ">
+                <label><h4
+                    style="margin: 0px;
+                    padding: 0px;
+                    "
+                    >Email</h4></label>
+                <input id="email" type="text"style="outline: none;
+                border: none;" />
+            </div>
+            <div 
+            style="margin: 0px;
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    ">
+                <label><h4
+                    style="margin: 0px;
+                    padding: 0px;
+                    "
+                    >Issue</h4></label>
+                
+                <textarea
+                style="outline: none;
+                border: none;"
+                id="complaints"
+                rows="5"
+                
+                ></textarea>
+            </div>
+            <button
+            style="background-color: rgb(117, 117, 212);
+            border-radius: 3px;
+            outline: none;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            " 
+             onclick="submit();">Submit</button>
+
+        </form>
+
+    </div>
+</body>
+<script>
+    var count=0
+    function callcomplaintform(){
+        console.log(count)
+       var id= document.getElementById("complaintform")
+       id.style.display="flex"
+       
+       count=1
+       
+    }
+    function hide(){
+        document.getElementById("complaintform").style.display="none"
+    }
+    
+    
+    
+</script>
+</html>
